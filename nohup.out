@@ -1,0 +1,71 @@
+[22:44:00] [WARN] [Settings]: Failed to load server settings (this is normal if no settings have been set yet): java.nio.file.NoSuchFileException: serversettings.json
+[22:44:01] [INFO] [Startup]: Loaded config from /home/k3adm/musicbot/config.txt
+[22:44:01] [INFO] [JDA]: Login Successful!
+[22:44:01] [INFO] [WebSocketClient]: Connected to WebSocket
+[22:44:03] [INFO] [JDA]: Finished Loading!
+[22:57:07] [WARN] [Settings]: Failed to load server settings (this is normal if no settings have been set yet): java.nio.file.NoSuchFileException: serversettings.json
+[22:57:08] [INFO] [Startup]: Loaded config from /home/k3adm/musicbot/config.txt
+[22:57:08] [INFO] [JDA]: Login Successful!
+[22:57:08] [INFO] [WebSocketClient]: Connected to WebSocket
+[22:57:09] [INFO] [JDA]: Finished Loading!
+[01:45:02] [ERROR] [AudioPlayer]: Handler of event com.sedmelluq.discord.lavaplayer.player.event.TrackEndEvent@6efdd61f threw an exception.
+java.util.concurrent.RejectedExecutionException: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@700a6740[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@21fea6fd[Wrapped task = com.jagrosh.jmusicbot.Bot$$Lambda$168/1719070179@4da5f033]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@2f3a7a82[Shutting down, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 2021]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2080)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:832)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor.delayedExecute(ScheduledThreadPoolExecutor.java:340)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor.schedule(ScheduledThreadPoolExecutor.java:562)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor.submit(ScheduledThreadPoolExecutor.java:715)
+	at java.base/java.util.concurrent.Executors$DelegatedExecutorService.submit(Executors.java:694)
+	at com.jagrosh.jmusicbot.Bot.closeAudioConnection(Bot.java:107)
+	at com.jagrosh.jmusicbot.audio.AudioHandler.onTrackEnd(AudioHandler.java:168)
+	at com.sedmelluq.discord.lavaplayer.player.event.AudioEventAdapter.onEvent(AudioEventAdapter.java:70)
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayer.dispatchEvent(DefaultAudioPlayer.java:350)
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayer.stopWithReason(DefaultAudioPlayer.java:137)
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayer.stopTrack(DefaultAudioPlayer.java:125)
+	at com.jagrosh.jmusicbot.audio.AudioHandler.stopAndClear(AudioHandler.java:98)
+	at com.jagrosh.jmusicbot.Bot.lambda$shutdown$1(Bot.java:131)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1492)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:658)
+	at com.jagrosh.jmusicbot.Bot.shutdown(Bot.java:125)
+	at com.jagrosh.jmusicbot.commands.owner.ShutdownCmd.execute(ShutdownCmd.java:42)
+	at com.jagrosh.jdautilities.command.Command.run(Command.java:325)
+	at com.jagrosh.jdautilities.command.impl.CommandClientImpl.onMessageReceived(CommandClientImpl.java:559)
+	at com.jagrosh.jdautilities.command.impl.CommandClientImpl.onEvent(CommandClientImpl.java:442)
+	at net.dv8tion.jda.core.hooks.InterfacedEventManager.handle(InterfacedEventManager.java:84)
+	at net.dv8tion.jda.core.handle.MessageCreateHandler.handleInternally(MessageCreateHandler.java:128)
+	at net.dv8tion.jda.core.handle.SocketHandler.handle(SocketHandler.java:37)
+	at net.dv8tion.jda.core.requests.WebSocketClient.onDispatch(WebSocketClient.java:868)
+	at net.dv8tion.jda.core.requests.WebSocketClient.onEvent(WebSocketClient.java:766)
+	at net.dv8tion.jda.core.requests.WebSocketClient.handleEvent(WebSocketClient.java:745)
+	at net.dv8tion.jda.core.requests.WebSocketClient.onBinaryMessage(WebSocketClient.java:903)
+	at com.neovisionaries.ws.client.ListenerManager.callOnBinaryMessage(ListenerManager.java:368)
+	at com.neovisionaries.ws.client.ReadingThread.callOnBinaryMessage(ReadingThread.java:270)
+	at com.neovisionaries.ws.client.ReadingThread.handleBinaryFrame(ReadingThread.java:990)
+	at com.neovisionaries.ws.client.ReadingThread.handleFrame(ReadingThread.java:749)
+	at com.neovisionaries.ws.client.ReadingThread.main(ReadingThread.java:108)
+	at com.neovisionaries.ws.client.ReadingThread.runMain(ReadingThread.java:64)
+	at com.neovisionaries.ws.client.WebSocketThread.run(WebSocketThread.java:45)
+[01:45:16] [INFO] [Startup]: Loaded config from /home/k3adm/musicbot/config.txt
+[01:45:17] [INFO] [JDA]: Login Successful!
+[01:45:18] [INFO] [WebSocketClient]: Connected to WebSocket
+[01:45:18] [INFO] [JDA]: Finished Loading!
+[02:01:33] [INFO] [Startup]: Loaded config from /home/k3adm/musicbot/config.txt
+[02:01:33] [INFO] [JDA]: Login Successful!
+[02:01:34] [INFO] [WebSocketClient]: Connected to WebSocket
+[02:01:34] [INFO] [JDA]: Finished Loading!
+[02:10:57] [ERROR] [Config]: com.typesafe.config.ConfigException$WrongType: config.txt: 55: songinstatus has type STRING rather than BOOLEAN: config.txt: 55: songinstatus has type STRING rather than BOOLEAN
+
+Config Location: /home/k3adm/musicbot/config.txt
+[02:11:29] [ERROR] [Config]: com.typesafe.config.ConfigException$WrongType: config.txt: 55: songinstatus has type STRING rather than BOOLEAN: config.txt: 55: songinstatus has type STRING rather than BOOLEAN
+
+Config Location: /home/k3adm/musicbot/config.txt
+[02:12:10] [ERROR] [Config]: com.typesafe.config.ConfigException$WrongType: config.txt: 55: songinstatus has type STRING rather than BOOLEAN: config.txt: 55: songinstatus has type STRING rather than BOOLEAN
+
+Config Location: /home/k3adm/musicbot/config.txt
+[02:12:40] [ERROR] [Config]: com.typesafe.config.ConfigException$WrongType: config.txt: 55: songinstatus has type STRING rather than BOOLEAN: config.txt: 55: songinstatus has type STRING rather than BOOLEAN
+
+Config Location: /home/k3adm/musicbot/config.txt
+[02:33:18] [INFO] [Startup]: Loaded config from /home/k3adm/musicbot/config.txt
+[02:33:18] [INFO] [JDA]: Login Successful!
+[02:33:19] [INFO] [WebSocketClient]: Connected to WebSocket
+[02:33:19] [INFO] [JDA]: Finished Loading!
